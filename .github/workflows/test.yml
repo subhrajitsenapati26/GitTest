@@ -1,0 +1,8 @@
+name: Laptop Test Workflow
+on: [push]
+jobs:
+  test-my-laptop:
+    runs-on: self-hosted  # यहाँ हमने GitHub को बताया कि हमारे लैपटॉप का इस्तेमाल करो
+    steps:
+      - name: Hello World test
+        run: echo "Hello from my own laptop!"
